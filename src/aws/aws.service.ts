@@ -25,10 +25,7 @@ export class AwsService {
     };
 
     try {
-      const upload = new Upload({
-        client: s3Client,
-        params: params,
-      });
+      const upload = new Upload({ client: s3Client, params: params });
 
       await upload.done();
 

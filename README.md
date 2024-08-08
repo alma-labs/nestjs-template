@@ -9,6 +9,7 @@ We build a lot of APIs, so I set up this basic repository with some of the commo
 - ✅ Prisma / Postgres / Neon
 - 🐳 Docker & Testing with Local DB
 - 📧 Free Email Sending (Gmail)
+- 😎 Swagger API Docs
 - 🐺 Husky on Commits
 - 📀 Github Actions
 
