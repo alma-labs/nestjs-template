@@ -49,6 +49,10 @@ There are a few important functions to know when migrating with prisma:
 - `npx prisma migrate deploy` (cicd) is meant for production. It looks for the `DATABASE_URL` in the `.env` file, and applies migrations but does not issue warnings, detect drift, reset artifacts, or anything else.
 - `npx prisma db push` Alternatively, if you are simply prototyping data changes, you can use `npx prisma db push`. This does not modify the migration files in any capacity, but instead updates the DB to have the corresponding schema for testing.
 
+## Other Random Notes
+
+- I use `staging` as the default branch, which should almost always been up to date with `main`.
+
 ## Questions? Want us to Help?
 
 Hit me up at garrett [at] almalabs dot io ❤️
