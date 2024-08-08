@@ -2,7 +2,7 @@
 
 We build a lot of APIs, so I set up this basic repository with some of the common tools we use. Enjoy!
 
-## Features for Any Job
+## 🔑 Key Features
 
 - 🐦‍🔥 Firebase Auth
 - 📦 AWS S3 Uploads
@@ -12,7 +12,7 @@ We build a lot of APIs, so I set up this basic repository with some of the commo
 - 🐺 Husky on Commits
 - 📀 Github Actions
 
-## Installation Instructions
+## 📝 Installation Instructions
 
 1. Copy `.env.example` as `.env`. Populate with variables.
 2. Update `firebase.config.ts`.
@@ -23,7 +23,9 @@ yarn
 yarn start:dev
 ```
 
-## CI/CD Pipeline
+4. If you want to deploy with the `github/workflows`, set Github `PROD_DATABASE_URL` and `STAGING_DATABASE_URL` for DB migrations.
+
+## 🪈 CI/CD Pipeline
 
 #### Step 1: Before Commit (Husky)
 
@@ -41,7 +43,7 @@ yarn start:dev
 - Migrate prisma database updates to relevant DB
 - Deploy on Heroku
 
-## Notes about Prisma Migrations
+## ✍️ Notes about Prisma Migrations
 
 There are a few important functions to know when migrating with prisma:
 
@@ -49,10 +51,6 @@ There are a few important functions to know when migrating with prisma:
 - `npx prisma migrate deploy` (cicd) is meant for production. It looks for the `DATABASE_URL` in the `.env` file, and applies migrations but does not issue warnings, detect drift, reset artifacts, or anything else.
 - `npx prisma db push` Alternatively, if you are simply prototyping data changes, you can use `npx prisma db push`. This does not modify the migration files in any capacity, but instead updates the DB to have the corresponding schema for testing.
 
-## Other Random Notes
-
-- I use `staging` as the default branch, which should almost always been up to date with `main`.
-
-## Questions? Want us to Help?
+## 🤔 Questions? Want us to Help?
 
 Hit me up at garrett [at] almalabs dot io ❤️
