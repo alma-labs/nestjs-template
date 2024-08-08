@@ -1,6 +1,6 @@
 # AlmaLabs.io NestJs Template 🔼
 
-We build a lot of APIs, so I set up this very basic repository with some of the key tooling we use. Enjoy!
+We build a lot of APIs, so I set up this basic repository with some of the common tools we use. Enjoy!
 
 ## Features for Any Job
 
