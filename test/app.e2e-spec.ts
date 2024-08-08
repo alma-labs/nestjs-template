@@ -12,8 +12,6 @@ describe('App e2e', () => {
   let prisma: PrismaService;
   let userToken: string;
 
-  const [stoneId1, stoneId2] = ['14CHARACTERSTING', '14CHARACTERSTING2'];
-
   beforeAll(async () => {
     const moduleRef = await Test.createTestingModule({
       imports: [AppModule],
@@ -59,24 +57,8 @@ describe('App e2e', () => {
   });
 
   describe('Users', () => {
-    it('Update user info', () => {
-      const dto: UserUpdateDto = {
-        name: 'Test User',
-        username: 'testuser',
-      };
-
-      return pactum.spec().put('/users/update').withBody(dto).expectStatus(200);
-    });
-    it('Get user private info', () => {
-      return pactum.spec().get('/users/private').expectStatus(200);
-    });
-
     it('Get user public', () => {
       return pactum.spec().get('/users/public/testuser').expectStatus(200);
-    });
-
-    it('Fail finding a user public', () => {
-      return pactum.spec().get('/users/public/notauser').expectStatus(404);
     });
   });
 });

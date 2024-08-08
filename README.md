@@ -7,7 +7,7 @@ We build a lot of APIs, so I set up this very basic repository with some of the 
 - 🐦‍🔥 Firebase Auth
 - 📦 AWS S3 Uploads
 - ✅ Prisma / Postgres / Neon
-- 🐳 Docker & Testing
+- 🐳 Docker & Testing with Local DB
 - 📧 Free Email Sending (Gmail)
 - 🐺 Husky on Commits
 - 📀 Github Actions
